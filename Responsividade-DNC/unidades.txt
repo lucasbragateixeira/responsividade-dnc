@@ -1,0 +1,52 @@
+tele widht 1000 px
+1vw = 10px
+tela height 600px
+1vh = 6px 
+é um porcento da tela,por isso é responsivo
+
+
+
+
+
+transition-property:opacity;
+transition-duration:0.5s;
+transition-time-function:ease-in;
+transiton-delay:.5s;
+
+
+transition: opacity 0.5s ease-in-out 0.5s(tudo de uma vez)
+
+
+
+
+@KeyFrames moveright{
+    0%{
+        left:0;
+
+    }
+    100%{
+        left:calc(100%-200px(tamanho exemplo da div));
+
+    }
+}
+
+para linkar essa animação
+.teste(nome da classe que vou alterar){
+    widht:200px;
+    height:200px;
+    background-color:red;
+    position:absolute(para poder mover);
+    left:0;
+    animation: moveright(linkar a animação) 2s ease-in infinity;
+    
+}
+
+
+
+BREAKPOINTS MEDIA QUERIES
+DESKTOP>=1024PX
+TABLET>=768PX && <1024PX
+MOBILE<768PX
+
+
+f12 abre o inpecionar e ctrl shift m abre o modo responsivo
